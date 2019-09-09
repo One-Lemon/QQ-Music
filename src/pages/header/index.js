@@ -24,7 +24,7 @@ export default class Header extends Component {
         <div className="head-warp">
           <h1 className="logo">
             <NavLink to="/">
-              <img src="./logo.png" alt="logo" className="logo-img" />
+              <img src="https://y.gtimg.cn/mediastyle/yqq/img/logo.png?nowebp=1" alt="logo" className="logo-img" />
             </NavLink>
           </h1>
           {/* 导航 */}

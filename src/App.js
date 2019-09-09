@@ -12,14 +12,12 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Header />
-          <Switch>
-            <Route exact path="/music" component={Music} />
-            <Route path="/mine" component={Mine} />
-            <Redirect to="/music" />
-          </Switch>
-        </div>
+        <Header />
+        <Switch>
+          <Route path="/music" component={Music} />
+          <Route path="/mine" component={Mine} />
+          <Redirect to="/music/index" />
+        </Switch>
       </Router>
     );
   }

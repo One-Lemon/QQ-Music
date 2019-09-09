@@ -4,6 +4,7 @@ export const Head = styled.div`
   .head-warp {
     max-width: 1200px;
     margin: 0 auto;
+    width: 1200px;
     position: relative;
     display: flex;
     align-items: center;
