@@ -3,6 +3,7 @@ import { MusicWarp } from "./style";
 import { Route, NavLink } from "react-router-dom";
 import Index from "./index/index";
 import Siger from "./siger/index";
+import CardDetails from '../detils/cardDetails';
 
 export default class Music extends Component {
   render() {
@@ -21,6 +22,7 @@ export default class Music extends Component {
             <li><NavLink to={`${this.props.match.path}/ticket`} activeStyle={{ color: '#31c27c' }}>票务</NavLink></li>
           </ul>
           <Route path={`${this.props.match.path}/index`} component={Index} />
+          <Route path={`${this.props.match.path}/card`} component={CardDetails} />
           <Route path={`${this.props.match.path}/siger`} component={Siger} />
         </div>
       </MusicWarp>

@@ -12,9 +12,17 @@ export default class MusicIndex extends Component {
         { id: 2, value: '古筝' },
         { id: 3, value: '英语' },
         { id: 4, value: '情歌' },
-        { id: 5, value: '背景音乐' }],
+        { id: 5, value: '背景音乐' }
+      ],
       isTab: 0
     }
+  }
+  // 歌单导航
+  onMainli(id) {
+    console.log(id);
+    this.setState({
+      isTab: id
+    })
   }
   render() {
     const { mainli, isTab } = this.state;
@@ -25,7 +33,10 @@ export default class MusicIndex extends Component {
           <ul className="mainUl">
             {
               mainli.map(li => (
-                <li className={isTab === li.id ? 'active' : ''} key={li.id}>{li.value}</li>
+                <li
+                  onClick={() => { this.onMainli(li.id) }}
+                  className={isTab === li.id ? 'active' : ''}
+                  key={li.id}>{li.value}</li>
               ))
             }
           </ul>

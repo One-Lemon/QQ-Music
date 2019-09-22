@@ -8,6 +8,7 @@ import {
 import Mine from "./pages/mine";
 import Music from "./pages/music";
 import Header from "./pages/header";
+// 路由懒加载
 export default class App extends Component {
   render() {
     return (
